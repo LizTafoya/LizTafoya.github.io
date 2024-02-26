@@ -14,12 +14,12 @@ html {
     scroll-snap-type: y mandatory;
 }
 /*Para el scroll*/
-.opiniones,
+/*.opiniones,
 .navegacion-principal,
 .formulario {
     scroll-snap-align: center;
     scroll-snap-stop: always;
-}
+}*/
 
 *, *:before, *:after {
     box-sizing: inherit;
