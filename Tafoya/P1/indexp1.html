@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Práctica</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Astro<span>Skate</span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Nosotros</a>
+            <a href="#">Tienda</a>
+            <a href="#">Diseños personalizados</a>
+            <a href="https://maps.app.goo.gl/zYyD8jD9esRP1nSX6">Ubicación</a>
+        </nav>
+    </div>
+    
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Patinetas con diseños inspirados en el espacio exterior</h2> 
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+            </div>
+                <p>CDMX,Reforma</p>
+        </div>
+    </section>
+    
+    <main class="contenedor sombra">
+        <h2>Opiniones</h2>
+
+        <div class="opiniones">
+            <section class="opinion">
+                <h3>Ethan Brown</h3>
+                <div class="imagen">
+                    <img class="img" src="img/persona3.webp" alt="persona1" height="150" width="150">    
+                </div><br>
+                <img src="img/ratingg.png" alt="rating" height="50" width="150">
+
+                <p>¡Estoy absolutamente impresionado con mi nueva patineta! El diseño inspirado en el espacio exterior es simplemente asombroso. La calidad del material es excelente y la atención al detalle en cada parte de la tabla es evidente. Definitivamente recomendaré esta marca a todos mis amigos que busquen una patineta única y de alta calidad</p>
+            </section>
+        
+            <section class="opinion">
+                <h3>Harper Thompson</h3>
+                <div class="imagen">
+                    <img class="img" src="img/persona1.jpeg" alt="persona1" height="150" width="150">
+                </div><br>
+                <img src="img/ratingg.png" alt="rating" height="50" width="150">
+                <p> ¡La patineta que compré superó mis expectativas! El diseño es increíblemente detallado y llamativo. Además, la tabla es muy duradera y proporciona un excelente rendimiento en el skatepark. Estoy muy satisfecho con mi compra y no puedo esperar para mostrarla en mi próxima sesión de skate</p>
+            </section>
+
+            <section class="opinion">
+                <h3>Jacob Anderson</h3>
+                <div class="imagen">
+                    <img class="img" src="img/persona2.jpeg" alt="persona1" height="150" width="150">
+                </div><br>
+                <img src="img/ratingg.png" alt="rating" height="50" width="150">
+                <p>¡No puedo dejar de admirar mi nueva patineta! El diseño creativo que combina elementos del espacio exterior con el mundo del skateboarding es simplemente genial. Además de lucir increíble, la tabla es muy resistente y ofrece una gran experiencia de patinaje. Definitivamente fue una compra que valió la pena  </p>
+            </section>
+        </div> <!--opiniones-->
+    
+        <section>
+            <h2>Contacto</h2>
+
+            <form class="formulario">
+                <fieldset>
+                    <legend>Para dudas y/o cotizaciones puedes contactarnos llenando todos los campos</legend>
+
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu Email">
+                        </div>
+                
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div> <!-- .contenedor-campos -->
+
+                    <div class="alinear-derecha flex">
+                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <p>Todos los derechos reservados. Lizeth Tafoya & Sebastián Venegas</p>
+    </footer>
+
+
+
+</body>
+</html>
