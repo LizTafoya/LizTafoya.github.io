@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Perfil</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Perfil de Usuario</h2>
+  <form method="post" action="http://monsterballgo.com/api/setpfp.php">
+  <div class="user-info">
+    <p><span>Nombre:</span>Sebastián Venegas Zepeda</p>
+    <p><span>Edad:</span> 23 años</p>
+    <p><span>Correo electrónico:</span> svz117@gmail.com</p>
+    <p><span>Puntos de experiencia:</span>1000</p>
+    <p><span>Créditos:</span>291,000</p>
+  
+    <!-- <input type="string" name="token" placeholder="token" value="code37" required>
+    <input type="string" name="id" placeholder="id" value="1921" required> -->
+  <div class="center">
+    <img class="perfil" id="profile-pic" src="venegas.jpeg" alt="Foto de perfil" >
+  </div><br>
+    <input type="file" accept="image/*"><br>
+    <input type="submit" name="Actualizar" placeholder="Actualizar" onclick="cambiarFoto(event)" required>
+  </div>
+  </form>
+</div>
+<script>
+  // Función para cambiar la foto de perfil
+  function cambiarFoto(event) {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = function(e) {
+      const profilePic = document.getElementById('profile-pic');
+      profilePic.src = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <title>Login</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Login</h2>
+  <form class="form" action="http://monsterballgo.com/api/login.php" method="POST">
+    <input type="string" name="token" placeholder="token" value="code37" required>
+    <input type="user" name="user" placeholder="user" required>
+    <input type="password" name="pass" placeholder="pass" id="pass" required>
+    <div class="center">
+    <img  src="foto2.jpg" alt="Foto de perfil" width="400" height="300">
+  </div>
+    <input type="submit" name="Entrar" placeholder="entrar" onclick="entrar()"required>
+   
+  </form>
+  
+   
+  <script>
+    console.log("entra a la función");
+    function entrar() {
+        let input = document.getElementById("pass").value;
+        // Generar el hash utilizando la función SHA-256
+        var hash = CryptoJS.SHA256(input).toString(CryptoJS.enc.Hex);
+        document.getElementById("pass").value = hash;
+        
+      }
+  </script>
+<div/>

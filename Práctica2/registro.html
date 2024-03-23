@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <title>Registro</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Regístrate</h2>
+  <div class="center">
+ <img  src="foto1.jpeg" alt="Foto de perfil" width="400" height="300">
+  </div>
+ 
+  <form class="form" action="http://monsterballgo.com/api/register.php" method="POST">
+    <input type="string" name="token" placeholder="token" value="code37" required>
+    <input type="string" name="id" placeholder="id" required>
+    <input type="string" name="username" placeholder="username" required>
+    <input type="string" name="pass" placeholder="pass" id="pass" required>
+    <input type="string" name="firstname" placeholder="firstname" required>
+    <input type="string" name="lastname" placeholder="lastname" required>
+    <input type="string" name="email" placeholder="email" required>
+    
+    <input type="submit" name="ok" placeholder="ok" onclick="generarHash()" required>
+  </form>
+   
+  <script>
+    console.log("entra a la función");
+    function generarHash() {
+        let input = document.getElementById("pass").value;
+        // Generar el hash utilizando la función SHA-256
+        var hash = CryptoJS.SHA256(input).toString(CryptoJS.enc.Hex);
+        document.getElementById("pass").value = hash;
+        
+      }
+  </script>
+<div/>

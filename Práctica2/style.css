@@ -1,0 +1,78 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #ff4081;
+  text-align: center;
+}
+
+span{
+  color: #ff4081;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="string"], input[type="user"],
+input[type="password"] {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+
+input[type="submit"] {
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff80ab;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Página LOGIN */
+
+.perfil{
+
+  width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #ff4081; /* Color de borde */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+.perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
