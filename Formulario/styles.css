@@ -27,7 +27,7 @@ html {
 body {
     font-size: 16px; /* 1rem = 10px */
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% );
+    background-color: whitesmoke;
 }
 
 header{
@@ -274,3 +274,7 @@ h1,h2,h3 {
 .footer {
     text-align: center;
 }
+body.dark-mode {
+    background-color: black;
+    color: #fff;
+  }
