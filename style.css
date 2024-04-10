@@ -1,0 +1,73 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fondo blanco */
+  }
+  
+  header {
+    background-color: #5c0029; /* Color vino */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  nav {
+    background-color: #5c0029; /* Color vino */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .menu li a:hover {
+    background-color: #8c0038; /* Color vino más oscuro */
+  }
+  
+  .menu li a.active {
+    background-color: #8c0038; /* Color vino más oscuro */
+  }
+  
+  footer {
+    background-color: #5c0029; /* Color vino */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
