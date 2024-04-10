@@ -45,7 +45,17 @@
                     </div>
                 </fieldset>
             </form>
+            <button id="dark-mode" onclick="cambiarModo()">Modo Oscuro</button>
         </section>
+        <script>
+         console.log("ENTRA");
+         function cambiarModo() {
+            console.log("ENTRAFUNCION");
+         document.body.classList.toggle('dark-mode');
+         console.log("ENTRA2");
+         }
+
+        </script>
 
     </main>
     
