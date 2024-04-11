@@ -1,0 +1,25 @@
+{"es": {
+    "title": "Traductor",
+    "description": "Cambio de idioma."
+  },
+  "en": {
+    "title": "Translator",
+    "description": "Language change."
+  },
+  "fr": {
+    "title": "Traducteur",
+    "description": "Changement de langue."
+  },
+  "de": {
+    "title": "Übersetzer",
+    "description": "Sprachwechsel."
+  },
+  "zh": {
+    "title": "翻译 ",
+    "description": "语言更改 ."
+  },
+  "ar": {
+      "title": "مترجم",
+      "description": "تغيير اللغة."
+    }
+}
